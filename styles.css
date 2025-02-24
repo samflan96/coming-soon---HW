@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ccb0af;
+}
+
+h1 {
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+h1 > strong {
+  color: black;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.all-sections {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+.text-section {
+  background-image: url("./images/bg-pattern-desktop.svg");
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #fdf8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15rem;
+}
+
+.logo-style {
+  width: 12rem;
+}
+
+.image-section {
+  background-image: url("./images/hero-desktop.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  color: #f19797;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+input::placeholder {
+  font-weight: 200px;
+  font-size: 1.25rem;
+  opacity: 0.5;
+  color: #ccb0af;
+}
+
+/* Button on top of the Input */
+.input-button-container {
+  display: inline;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.input-button-container input {
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid #ccb0af;
+  padding: 0 2rem;
+  width: 80%;
+}
+
+.input-button-container button {
+  background-color: #f19797;
+  border-radius: 40px;
+  border: 1px solid #f19797;
+  box-shadow: 0 3px 10px #f19797;
+  width: 5rem;
+  aspect-ratio: 1;
+  height: 100%;
+  position: absolute;
+  right: 5px;
+}
